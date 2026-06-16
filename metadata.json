@@ -1,0 +1,6 @@
+{
+  "name": "Panta Theke Polao",
+  "description": "Premium rooftop family restaurant in West Bengal (পান্তা থেকে পোলাও) offering delicious Bengali, Tandoor, and Chinese dishes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
