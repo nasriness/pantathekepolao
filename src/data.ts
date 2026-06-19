@@ -3,13 +3,20 @@ import { MenuItem, GalleryItem, Testimonial, RestaurantEvent } from './types';
 // Let's import the actual generated images. We can import them as strings or refer directly to their relative paths in vite.
 // To avoid build system issues, we can reference their absolute-relative paths from the src root.
 export const IMAGES = {
-  hero: '/src/assets/images/hero_rooftop_dining_1781617453821.jpg',
-  bengaliSpecial: '/src/assets/images/bengali_platter_1781617473393.jpg',
+  hero: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiTZYh9vW5xcn5RL77aNbdG_us4-1lIw1-3pB4VC4T1Lc5vlwAXY_ZrzOZp0lz2D5wLJXije6AcaeakMPDgrZ2PqncCwJYxk5F_o6KlRBkOA8M0j1GG-cll2_a3nXKv2J7o8xfuA=w1600-h900-k-no',
+  bengaliSpecial: '/src/assets/images/panta_bhat_platter_1781622956011.jpg',
+  basantiPolaoMutton: '/src/assets/images/basanti_polao_mutton_1781622972484.jpg',
   tandoor: '/src/assets/images/tandoor_platter_1781617490625.jpg',
-  rooftopSeating: '/src/assets/images/rooftop_night_seating_1781617508452.jpg',
+  rooftopSeating: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiTZYh9vW5xcn5RL77aNbdG_us4-1lIw1-3pB4VC4T1Lc5vlwAXY_ZrzOZp0lz2D5wLJXije6AcaeakMPDgrZ2PqncCwJYxk5F_o6KlRBkOA8M0j1GG-cll2_a3nXKv2J7o8xfuA=w1600-h900-k-no',
   desserts: '/src/assets/images/bengali_desserts_1781617525340.jpg',
   chinese: '/src/assets/images/chinese_cuisine_1781617544342.jpg',
   beverage: '/src/assets/images/gondhoraj_cooler_1781617564338.jpg',
+  welcomeSign: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiTZYh9vW5xcn5RL77aNbdG_us4-1lIw1-3pB4VC4T1Lc5vlwAXY_ZrzOZp0lz2D5wLJXije6AcaeakMPDgrZ2PqncCwJYxk5F_o6KlRBkOA8M0j1GG-cll2_a3nXKv2J7o8xfuA=w1600-h900-k-no',
+  originalHero: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiTZYh9vW5xcn5RL77aNbdG_us4-1lIw1-3pB4VC4T1Lc5vlwAXY_ZrzOZp0lz2D5wLJXije6AcaeakMPDgrZ2PqncCwJYxk5F_o6KlRBkOA8M0j1GG-cll2_a3nXKv2J7o8xfuA=w1600-h900-k-no',
+  luchiAlurDom: '/src/assets/images/luchi_alur_dom_1781623336021.jpg',
+  naanChickenKosha: '/src/assets/images/naan_chicken_kosha_1781623351413.jpg',
+  bakedSandeshRabdi: '/src/assets/images/baked_sandesh_rabdi_1781623365428.jpg',
+  chilledMangoLassi: '/src/assets/images/chilled_mango_lassi_1781623379307.jpg'
 };
 
 // Bilingual general translations
@@ -130,7 +137,7 @@ export const TRANSLATIONS = {
   },
   addressLabel: { bn: 'ঠিকানা:', en: 'Address:' },
   addressValue: {
-    bn: '৩৫৬এফ+জি২৭, হোরাল, সোনাটিকরি, হরাল দাসপুর, পশ্চিমবঙ্গ - ৭১২৩০৩',
+    bn: '৩৫৬এফ+জি২৭, হরাল, সোনাটিকরি, হরাল দাসপুর, পশ্চিমবঙ্গ - ৭১২৩০৩',
     en: '356F+G27, Horal, Sonatikri, Haral daspur, West Bengal 712303'
   },
   hoursLabel: { bn: 'খোলার সময়:', en: 'Opening Hours:' },
@@ -168,7 +175,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 320,
     category: 'bengali-special',
-    image: IMAGES.bengaliSpecial,
+    image: IMAGES.basantiPolaoMutton,
     isPopular: true
   },
   {
@@ -180,6 +187,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 240,
     category: 'bengali-special',
+    image: IMAGES.bengaliSpecial,
     isPopular: true
   },
   {
@@ -190,7 +198,8 @@ export const MENU_ITEMS: MenuItem[] = [
       en: 'A classic rustic combination: cool Panta-bhat served with super crunchy spicy Loitta / Bombay Duck fish fry, garnishes and pickle.'
     },
     price: 140,
-    category: 'bengali-special'
+    category: 'bengali-special',
+    image: IMAGES.bengaliSpecial
   },
   {
     id: 'b4',
@@ -201,6 +210,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 80,
     category: 'bengali-special',
+    image: IMAGES.luchiAlurDom,
     isVegetarian: true
   },
 
@@ -225,7 +235,8 @@ export const MENU_ITEMS: MenuItem[] = [
       en: 'Whole premium chicken marinated in yogurt and signature Indian spices, slow-roasted in our traditional clay tandoor.'
     },
     price: 360,
-    category: 'tandoor'
+    category: 'tandoor',
+    image: IMAGES.tandoor
   },
   {
     id: 't3',
@@ -236,6 +247,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 180,
     category: 'tandoor',
+    image: IMAGES.tandoor,
     isVegetarian: true
   },
   {
@@ -246,7 +258,8 @@ export const MENU_ITEMS: MenuItem[] = [
       en: 'Two butter-glazed clay-oven naans paired with a bowl of rich spicy authentic Chicken Kosha.'
     },
     price: 210,
-    category: 'tandoor'
+    category: 'tandoor',
+    image: IMAGES.naanChickenKosha
   },
 
   // Chinese
@@ -270,7 +283,8 @@ export const MENU_ITEMS: MenuItem[] = [
       en: 'Fragrant long-grain basmati rice tossed with juicy shrimp, eggs, and dynamic oriental sesame-soy aromatics.'
     },
     price: 170,
-    category: 'chinese'
+    category: 'chinese',
+    image: IMAGES.chinese
   },
   {
     id: 'c3',
@@ -281,6 +295,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 120,
     category: 'chinese',
+    image: IMAGES.chinese,
     isVegetarian: true
   },
 
@@ -307,6 +322,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 90,
     category: 'desserts',
+    image: IMAGES.bakedSandeshRabdi,
     isVegetarian: true
   },
 
@@ -333,6 +349,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 70,
     category: 'beverages',
+    image: IMAGES.chilledMangoLassi,
     isVegetarian: true
   }
 ];
@@ -407,13 +424,13 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'g2',
     title: { bn: 'সুস্বাদু খাঁটি বাসন্তী পোলাও ও কষা খাসির মাংস', en: 'Creamy Basanti Polao paired with Kosha Mutton' },
     category: 'food',
-    image: IMAGES.bengaliSpecial
+    image: IMAGES.basantiPolaoMutton
   },
   {
     id: 'g3',
-    title: { bn: 'উষ্ণ মনোরম সন্ধ্যার আলো', en: 'Warm evening hanging lights of our restaurant' },
+    title: { bn: 'পার্কের প্রবেশপথে চমৎকার স্বাগতম তোরণ', en: 'Beautiful rustic handcraft welcome sign board at the entryway' },
     category: 'decorations',
-    image: IMAGES.hero
+    image: IMAGES.welcomeSign
   },
   {
     id: 'g4',
@@ -435,15 +452,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 'g7',
-    title: { bn: 'সন্ধ্যাবেলা নদীয়া শহরের মনোরম হাওয়া', en: 'Rooftop lounge overlooking the city light sunset' },
+    title: { bn: 'সন্ধ্যাবেলা রুপটপের মনোরম হাওয়া', en: 'Rooftop lounge overlooking the city light sunset' },
     category: 'ambience',
-    image: IMAGES.rooftopSeating // Reusing for a rich, beautiful feel
+    image: IMAGES.originalHero
   },
   {
     id: 'g8',
-    title: { bn: 'চায়নিজ সিসলার নুডলস ও ক্রিস্পি চিকেন', en: 'Stir fried Hakka Noodles with Chilli Chicken' },
+    title: { bn: 'ঐতিহ্যবাহী মেটে থালায় চমৎকার পান্তা ইলিশ', en: 'Traditional Panta Ilish with all rustic bhortas in clay plate' },
     category: 'food',
-    image: IMAGES.chinese
+    image: IMAGES.bengaliSpecial
   }
 ];
 

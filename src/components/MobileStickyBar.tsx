@@ -55,7 +55,7 @@ export default function MobileStickyBar({ lang, openMenu }: MobileStickyBarProps
 
         {/* Directions Button */}
         <a
-          href="https://maps.google.com/?q=356F%2BG27,+Horal,+Sonatikri,+Haral+daspur,+West+Bengal+712303"
+          href="https://www.google.co.in/maps/place/%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BE+%E0%A6%A5%E0%A7%86%E0%A6%9group+%E0%A6%AA%E0%A7%8B%E0%A6%B2%E0%A6%BE%E0%A6%93/@23.0612981,88.1725466,15z"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center text-stone-200 hover:text-amber-400 active:scale-95 transition-all duration-150"
